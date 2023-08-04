@@ -14,6 +14,7 @@ function Section({ title, dataSource, filterSource, type }) {
     dataSource().then((data) => {
       setCards(data);
     });
+    // eslint-disable-next-line
   }, []);
 
   useEffect(() => {
@@ -23,6 +24,7 @@ function Section({ title, dataSource, filterSource, type }) {
         setFilters([...filters, ...data]);
       });
     }
+    // eslint-disable-next-line
   }, []);
 
   const filteredCards = cards.filter((card) =>

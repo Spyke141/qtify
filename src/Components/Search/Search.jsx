@@ -40,7 +40,6 @@ const top100Films = [
 function Search({ placeholder }) {
   const {
     getRootProps,
-    getInputLabelProps,
     getInputProps,
     getListboxProps,
     getOptionProps,
